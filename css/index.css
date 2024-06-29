@@ -12,7 +12,9 @@ body {
 
 button {
     font-size: x-large;
-    border-radius: 10px;
+    font-weight: bolder;
+    border-radius: 25px;
+    border: 0;
 }
 
 .functions {
@@ -26,8 +28,8 @@ button {
 }
 
 #displayDiv {
-    border-radius: 10px;
-    border: 2px solid rgb(28, 32, 36);
+    border-radius: 20px;
+    border: 0;
     display: flex;
     margin: 5px;
     justify-content: space-evenly;
