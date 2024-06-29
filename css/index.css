@@ -1,0 +1,23 @@
+.functions {
+    background-color: lightblue;
+}
+.operators {
+    background-color: lightcoral;
+}
+.numbers {
+    background-color: lightgreen;
+}
+
+#calculatorDiv {
+    border: 1px solid black;
+    width: 500px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#keypadDiv {
+    
+}
