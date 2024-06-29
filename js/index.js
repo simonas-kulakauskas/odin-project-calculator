@@ -1,28 +1,20 @@
-const display = document.getElementById("displayText");
-
-// Nodelist of all buttons
-const buttons = document.querySelectorAll("button");
-
-// Array of all buttons with value (number buttons).
-
-const numberButtons = Array.from(buttons).filter((button) => {
-    if (button.value != "") {
-        return (button)
-    }
-});
-
-const logNumber = (button) => {
-    console.log(button.target.value)
-    display.textContent = button.target.value;
+// Math Operator Functions
+const add = (firstNumber, secondNumber) => {
+    return firstNumber + secondNumber
 }
 
-for (let i = 0; i < numberButtons.length; i++) {
-    numberButtons[i].addEventListener("click", logNumber)
+const subtract = (firstNumber, secondNumber) => {
+    return firstNumber - secondNumber
 }
 
-const clearDisplay = () => { // Will clear display upon being run.
-    display.textContent = "0";
+const multiply = (firstNumber, secondNumber) => {
+    return firstNumber * secondNumber
 }
 
-const clearButton = document.getElementById("clear").addEventListener("click", clearDisplay);
+const divide = (firstNumber, secondNumber) => {
+    return firstNumber / secondNumber
+}
 
+const modulus = (firstNumber, secondNumber) => {
+    return firstNumber % secondNumber
+}
