@@ -1,3 +1,20 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: lightslategray;
+}
+
+button {
+    font-size: x-large;
+    border-radius: 10px;
+}
+
 .functions {
     background-color: lightblue;
 }
@@ -8,16 +25,44 @@
     background-color: lightgreen;
 }
 
+#displayDiv {
+    border-radius: 10px;
+    border: 2px solid rgb(28, 32, 36);
+    display: flex;
+    margin: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke
+}
+
+
 #calculatorDiv {
-    border: 1px solid black;
-    width: 500px;
-    height: 650px;
+    width: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 #keypadDiv {
-    
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 5px;
+    padding: 5px;
+}
+
+#keypadDiv>div {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+
+button {
+    flex: 1;
+    padding: 5%;
+}
+
+#equals {
+    flex: 2.9;
 }
