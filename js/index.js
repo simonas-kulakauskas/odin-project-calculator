@@ -21,10 +21,11 @@ const modulus = (firstNumber, secondNumber) => {
 
 let firstNumber, secondNumber, operator, display, displayValue;
 
-const operate = (operator, firstNumber, secondNumber) => {
+const operate = () => {
     switch (operator) {
         case "+":
-            return add(firstNumber, secondNumber);
+            populateDisplay(add(firstNumber, secondNumber));
+            break;
         case "-":
             return subtract(firstNumber, secondNumber);
         case "*":
@@ -42,12 +43,16 @@ displayValue = 0;
 
 const populateDisplay = (value) => {
     display.textContent = value;
+    return;
 }
 populateDisplay(displayValue)
 
 const clearDisplay = () => {
     display.textContent = "0"
     displayValue = 0;
+    firstNumber = 0;
+    secondNumber = 0;
+    operator = 0;
 }
 
 const saveNumber = (value) => {
@@ -91,3 +96,7 @@ const multiplyButton = document.getElementById("multiply").addEventListener("cli
 const modulusButton = document.getElementById("modulus").addEventListener("click", () => {
     operator = "%"
 })
+
+// Equals Button
+
+const equalsButton = document.getElementById("equals").addEventListener("click", operate)
